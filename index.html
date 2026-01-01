@@ -100,7 +100,21 @@
     .deal-card h4 { margin: 0 0 10px 0; color: #f1c40f; }
     .profit { font-weight: bold; font-size: 1.1em; color: #2ecc71; }
 </style>
-
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366; /* Цвет WhatsApp */
+    color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+.floating-button:hover { transform: scale(1.1); }
 <div class="invest-deals">
     <h2>🔥 ТОП-3 Инвест-объекта (Январь 2026)</h2>
     <div class="deal-grid">
@@ -129,6 +143,7 @@
 
     <a href="https://t.me/твой_ник" class="cta-button">Написать в Telegram и получить подборку объектов</a>
 </div>
-
+<a href="https://wa.me/твой_номер" class="floating-button">📱 Написать в WhatsApp</a>
 </body>
+
 </html>
